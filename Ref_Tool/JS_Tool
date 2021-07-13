@@ -1,0 +1,21 @@
+#ifndef JS_TOOL
+#define JS_TOOL
+
+#include <QWidget>
+
+QT_BEGIN_NAMESPACE
+namespace Ui { class JS_Tool; }
+QT_END_NAMESPACE
+
+class JS_Tool : public QWidget
+{
+    Q_OBJECT
+
+public:
+    JS_Tool(QWidget *parent = nullptr);
+    ~JS_Tool();
+
+private:
+    Ui::JS_Tool *ui;
+};
+#endif // JS_TOOL
